@@ -1,1 +1,1 @@
-Just a simple txt file for checking it hash value
+Just a simple txt file for checking its hash value
