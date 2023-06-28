@@ -16,9 +16,54 @@ pip install -r requirements.txt
 ```
 
 
-## Run the Script
 
-You can simply running the script by using this command: 
+## How to use
+
+You need to add flags or options when running HashGuard, i.e. single mode or recursive mode.
+
+**Single Mode**
+
+Specify the path to a single file with its format
 ```
-python3 hashguard.py
+python3 main.py -s tests/file.txt
 ```
+
+**Recursive Mode**
+
+Specify the path to a directory
+```
+python3 main.py -r tests
+```
+
+**Specifying Hash Algorithm**
+
+By default, this program uses MD5 hash function. But, you can specify the hash algorithm by adding `-a` or `--algorithm` flags before /or after typing the scan mode.
+```
+python3 main.py -r tests -a sha512-224
+```
+or
+```
+python3 main.py -a sha3-512 -a tests/file.txt
+```
+Check the **Supported Hash Functions** section to see all of the hashes supported in this program
+
+**Help Options**
+
+If you are unsure about how to running it, you can type the following command.
+```
+python3 main.py --help
+```
+## Supported Hash Functions
+ - MD5
+ - SHA1
+ - SHA224
+ - SHA256
+ - SHA384
+ - SHA512
+ - SHA512/224
+ - SHA512/256
+ - SHA3-224
+ - SHA3-256
+ - SHA3-384
+ - SHA3-512
+
