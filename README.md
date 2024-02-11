@@ -49,7 +49,7 @@ Check the **Supported Hash Functions** section to see all of the hashes supporte
 
 **Help Options**
 
-If you are unsure about how to running it, you can type the following command.
+If you're unsure about how to running it, you can type the following command.
 ```
 python3 main.py --help
 ```
